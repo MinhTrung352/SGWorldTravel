@@ -37,6 +37,10 @@ div h4
 #language a
 {
 	font-size: 13px;
+	color: #9b9a9a;
+	text-decoration: none;
+}
+#language a:hover{
 	color: #6b6b6b;
 }
 /*------------MeNu--------------*/
@@ -53,7 +57,7 @@ div h4
 	color: #545454;
 }
 
-ul li a:hover
+#menu ul li a:hover
 {
     background-color: transparent !important;
 	border-radius: 0;
@@ -63,7 +67,7 @@ ul li a:hover
     border-bottom: 2px solid #0076a1;
     padding-bottom: 20px;
 }
-ul  li a.active {
+#menu ul  li a.active {
 	background-color: transparent !important;
 	border-radius: 0;
 	border-top-style: none;
@@ -77,19 +81,42 @@ ul  li a.active {
 {
 	padding:0 ;
 }
-ul li{
-	/*padding-bottom: 10px;*/
+#menu ul li{
+	
 	padding-right: 10px;
 	padding-left: 10px;
 	margin-left: -10px;
+	
 
 }
-ul{
+#menu ul{
 	padding-left: -30px;
 	width: 100%;
 	padding-top: 30px;
 }
-
+#menu_xemtour a:hover{
+	border-bottom-style: none;
+}
+/*Menu Cap2*/
+#menu li ul{
+	position: absolute;
+	display: none;
+	width: 200px;
+	margin-left: -20px;
+	margin-top: -12px;
+}
+#menu li:hover ul{
+	display: block;
+	list-style: none;
+}
+#menu li ul li {
+	padding-bottom: 10px;
+	
+}
+#menu li ul li a:hover{
+	text-decoration: none;
+	border-bottom-style: none;
+}
 /*---------EndMenu--------*/
 #bong_slide
 {
@@ -230,13 +257,7 @@ div div div a{
 	font-weight: 600;
 	color: #6e6e6e;
 }
-/*#content_tour_hot h5
-{
-	font-family: OpenSans Semibold;
-	font-size: 18px;
-	color: #6e6e6e;
-	font-weight: bold;
-}*/
+
 .title2
 {
 	border-top-style: none;
