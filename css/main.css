@@ -97,7 +97,7 @@ div h4
 #menu_xemtour a:hover{
 	border-bottom-style: none;
 }
-/*Menu Cap2*/
+/*--------Menu Cap2----------*/
 #menu li ul{
 	position: absolute;
 	display: none;
@@ -158,6 +158,7 @@ a
     color: #0076a1;
   
 }
+
 .header_content
 {
 	background-image: url("../img/Color Fill 8 copy.png");
@@ -211,6 +212,11 @@ div div div a{
 	padding-top: 5px;
 	margin-bottom: 0;
 }
+#diadiem input{
+	font-size: 13px;
+	color: #a8a7a7;
+	background-color: #f2f2f2;
+}
 #sub_sreachtour 
 {
 	height: 100%;
@@ -238,8 +244,9 @@ div div div a{
     width:60%;
     margin: auto;
 }
-#tour_hot_line a:link{
+#tour_hot_line a:hover{
 	text-decoration: none;
+	color: red;
 }
 .content_title
 {
@@ -295,10 +302,14 @@ div div div a{
 	font-weight: 700;
 }
 
-#link_dulich
+.link_dulich
 {
 	text-align: right;
 	text-decoration: none;
+}
+.link_dulich a:hover{
+	text-decoration: none;
+	color: red;
 }
 #trongngoainuoc
 {
@@ -327,6 +338,9 @@ div div div a{
 	color: #6e6e6e;
 	font-weight: 600;
 	text-decoration: none;
+}
+#trongngoainuoc div p a:hover{
+	color: blue;
 }
 .trongngoainuoc_title{
 	font-family: OpenSans Semibold;
@@ -396,7 +410,11 @@ footer
 #Menufooter div a:link
 {
 	text-decoration: none;
-	
+}
+#Menufooter div a:hover
+{
+	color: #10b5c0;
+
 }
 #footer1
 {

@@ -45,7 +45,7 @@
            <ul class="nav nav-pills"> 
             <li ><a class="active" href="#" >TRANG CHỦ</a></li>
             <li><a href="#">GIỚI THIỆU</a></li>
-            <li id="menu_xemtour"><a  href="#">XEM TOUR</a>
+            <li ><a id="menu_xemtour" href="#">XEM TOUR</a>
               <ul >
                 <li><a href="#">TOUR TRONG NUOC</a></li>
                 <li><a href="#">TOUR NGOAI NUOC</a></li>
@@ -118,9 +118,23 @@
   </div>
   <div id="diadiem">
     <p>Chọn điểm đi:</p>
-    <input type="text" name="dia_diem_di" value="Điểm đi">
+    <input list="browsers" name="browsers" value="Điểm đi">
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+       <option value="Safari">
+    </datalist>
     <p>Chọn điểm đến:</p>
-    <input type="text" name="dia_diem_den" value="Điểm đến">
+    <input list="browsers" name="browsers" value="Điểm đến">
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+       <option value="Safari">
+    </datalist>
   </div>
 </div>
 <div id="sub_sreachtour">
@@ -196,7 +210,7 @@
   <p><a href="#">DU LỊCH MIỀN TRUNG ĐẢO LÝ SƠN -  NÚI THÊN ẨN GIÁ TỐT</a></p>
   <p><a href="#">DU LỊCH MIỀN TRUNG ĐẢO LÝ SƠN -  NÚI THÊN ẨN GIÁ TỐT</a></p>
 </div>
-<div id="link_dulich"><a href="#"><em>Xem thêm các tour khác</em></a></div>
+<div class="link_dulich"><a href="#"><em>Xem thêm các tour khác</em></a></div>
 
 </div>
 <div class="col-md-6">
@@ -230,7 +244,7 @@
   <p><a href="#">DU LỊCH MIỀN TRUNG ĐẢO LÝ SƠN -  NÚI THÊN ẨN GIÁ TỐT</a></p>
 </div>
  
-<div id="link_dulich"><a href="#"><em>Xem thêm các tour khác</em></a></div>	  			
+<div class="link_dulich"><a href="#"><em>Xem thêm các tour khác</em></a></div>	  			
 </div>
 
 </div>
