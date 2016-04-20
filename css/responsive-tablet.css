@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Responsive CSS Landscape Tablet
+   ========================================================================== */
+@media only screen and (min-width: 960px) and (max-width: 1240px) {
+    #menu ul li a{
+        min-height: 45px;
+    }
+    #menu li ul{
+        z-index: 900;
+    }
+    #menu ul .btn-group {
+    margin-top: -3px;
+    }
+}
+/* ==========================================================================
+   Responsive CSS Portrait Tablet
+   ========================================================================== */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	#hotline div h4 {
+    font-size: 15px;
+	}
+	#hotline strong {
+    	font-size: 20px;
+	}
+	#menu ul li a {
+    	font-size: 12px;
+    }
+    #header-tourcontent {
+	    padding-left: 20px;
+	    padding-bottom: 100px;
+	}
+	#header_slide_tourcontent {
+    	height: 280px;
+	}
+    #radio_tour{
+    	width: 30%;
+    	float:left;
+    }
+    #diadiem{
+    	float:left;
+    	width:70%;
+    }
+    #diadiem #diadiem_di{
+    	float:left;
+    	width: 50%;
+    }
+    #diadiem #diadiem_den{
+    	float:left;
+    	width:50%;
+    }
+    #content_gia #content_gia_left {
+    padding-right: 20px;
+    text-align: right;
+	}
+    #Menufooter div p {
+	    padding-left: 0;
+	    padding-right: 0;
+	   
+	}
+	#Menufooter div p a {
+	    padding: auto;
+	     font-size: 13px;
+	}
+    #menu ul .btn-group {
+    margin-top: -6px;
+    }
+    #menu ul li a.dropdown-toggle:hover{
+    padding-bottom: 26px;
+    }
+    #menu ul .btn-group a {
+        font-size: 12px;
+    }
+    #slide_picture .carousel-control .glyphicon-chevron-left {
+        margin-left: -60px;
+    }
+    #slide_picture .carousel-control .glyphicon-chevron-right{
+        margin-right: -50px;
+        margin-top: -30px;
+        
+    }
+
+}

@@ -1,0 +1,196 @@
+/* ==========================================================================
+   Responsive CSS Landscape Mobile
+   ========================================================================== */
+ @media only screen and (min-width: 480px) and (max-width: 767px) {
+ 	#logo{
+ 		margin-bottom: 15px;
+ 	}
+ 	#hotline div h4 strong {
+	    font-size: 18px;
+	    padding-left: 15px;
+	}
+	#hotline div h4 {
+	    font-size: 13px;
+	    padding: 0;
+	}
+    #group .container .navbar-collapse{
+ 		border-top: none;
+ 	}
+ 	#group{
+ 		padding-bottom: 20px;
+ 	}
+ 	#language a {
+    
+    color: #4DC511;
+    margin-right: 15px;
+	}
+	#menu li ul {
+	    margin-top: -20px;
+	    box-shadow:0 3px 2px #ccc;
+	}
+	#menu .nav-pills li{
+ 		float: none;
+ 	}
+	.navbar-toggle {
+    	margin-left: 300px;
+    	margin-top: 20px;
+	}
+	.pull-right {
+    	float: none;
+    	width: 100%;
+	}
+	#language{
+		width: 50%;
+		text-align: left;
+	}
+	#menu ul li a.active{
+		border-bottom: none;
+	}
+	#menu ul li a:hover{
+		border-bottom: none;
+	}
+	#menu ul li ul{
+		width: 100%;
+	}
+	#menu ul li .btn-group{
+		min-height: 45px;
+	}
+	.content_title
+	{
+		width: auto;   
+		margin-left: 0;
+	}
+	#slide_picture .item{
+		max-height: 150px;
+	}
+	#slide_picture .item div div h5{
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: 10px;	
+	}
+	#slide_picture .item div div p {	
+		font-size: 6px;
+	}
+	#slide_picture .item img{
+		max-height: 40px;
+		max-width: 40px;
+	}
+ }
+
+
+/* ==========================================================================
+   Responsive CSS Portrait Mobile
+   ========================================================================== */
+@media only screen and (min-width: 100px) and (max-width: 479px) {
+	#logo{
+ 		margin-bottom: 15px;
+ 		
+ 	}
+ 	.mynav .logo {
+ 		width: 100px;
+	    height: 80px;
+	    margin-left: 10px;
+	    margin-top: 8px;
+ 	}
+ 	#hotline {
+ 		padding-left: 0;
+ 	}
+ 	#hotline .pull-left{
+ 		padding-left: 2px;
+ 		padding-right: 2px;
+ 		width: 100%;
+ 	}
+	#hotline .pull-left h4{
+ 		font-size: 13px;
+ 		
+ 	}
+ 	#hotline .pull-left h4 strong{
+ 		 font-size: 18px;
+	    padding-left: 10px;
+ 	}
+ 	#language{
+ 		font-size: 10px;
+ 		margin-top: 13px;
+ 		width: 100%;
+ 		text-align: left
+ 	}
+ 	#menu{
+ 		margin-left: -15px;
+ 	}
+ 	#menu .nav-pills li{
+ 		float: none;
+ 	}
+ 	#group .container .navbar-collapse{
+ 		border-top: none;
+ 	}
+ 	#group{
+ 		padding-bottom: 20px;
+ 	}
+ 	#content_gia {
+ 		font-size: 8px;
+ 	}
+	.content_title
+	{
+		width: auto;   
+		margin-left: 0;
+	}
+
+ 	#trongngoainuoc div strong {
+    font-size: 10px;
+    
+	}
+	#menu li ul {
+	    margin-top: -20px;
+	    box-shadow:0 3px 2px #ccc;
+	    
+	}
+	#menu ul li a.active{
+		border-bottom: none;
+	}
+	#menu ul li a:hover{
+		border-bottom: none;
+	}
+	#language a {
+    
+    color: #4DC511;
+    
+	}
+	.navbar-toggle {
+    margin-left: 150px;
+	}
+	#menu ul li a:hover{
+		padding-bottom: 0;
+	}
+	#menu ul li ul{
+		width: 100%;
+		
+	}
+	#menu ul li ul.dropdown-menu{
+		top:40px;
+	}
+	#menu ul li .btn-group{
+		min-height: 45px;
+	}
+	#slide_picture .item{
+	max-height: 150px;	
+	}
+	#slide_picture .item div {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#slide_picture .item div div h5{
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: 8px;	
+	}
+	#slide_picture .item div div p {
+	
+	font-size: 6px;
+	padding: 0;
+	}
+	#slide_picture .item img{
+		max-height: 20px;
+		max-width: 20px;
+		padding: 0;
+	}
+}

@@ -6,7 +6,7 @@
 a,p,h1,h2,h3,h4,h5,h6,span,strong{
 	font-family: 'Open Sans', sans-serif;
 }
-header
+.banner-wrap
 {
 	background-image: url("../img/Group-1.jpg");
 	background-repeat: no-repeat;
@@ -14,7 +14,45 @@ header
 	width: 100%;
     margin-bottom: 70px;
 }
-div h4 
+.navbar{
+	margin-bottom: 0;
+}
+
+.mynav {
+	
+	background-image: url("../img/Group-1.jpg") !important;
+	background-size: cover;
+	background-color: rgba(0,0,0,0);
+	border: none;
+	min-height: 110px;
+}
+#group{
+	background-image: url("../img/Color Fill 8 copy.png");*/
+	border-top-style: none;
+    border-right-style: none;
+    border-bottom-style:  solid;
+    border-left-style: none;
+    border-width: 0 0 1px 0;
+    border-color: #0076a1;
+    height: 100%;
+}
+.mynav .logo
+{
+	background:url("../img/logo.png") center no-repeat;
+	background-size: 100%;
+	width: 164px;
+	height: 105px;
+	text-indent: -999px;
+}
+.mynav .navbar-header .navbar-brand{
+	height: 110px;
+	padding: 0;
+}
+#hotline{
+	margin-top: 30px;
+	padding-left: 15px;
+}
+#hotline div h4 
 {
 	font-size: 18px;
 	padding: 0 0;
@@ -47,16 +85,25 @@ div h4
 #menu
 {
 	margin-left: 0px;
-	padding-left: 15px;
-	padding-right: 0px;
+	padding: 0;
+	
 }
 
 #menu ul li a{
 	font-size: 14px;
 	font-weight:600;
 	color: #545454;
+	min-height: 45px;
 }
-
+#menu ul li a.dropdown-toggle:hover{
+	padding-bottom: 24px;
+}
+#menu ul li a.caret_link:hover{
+	border-bottom: none;
+}
+#menu ul li a.caret_link{
+	margin-right: 0;
+}
 #menu ul li a:hover
 {
     background-color: transparent !important;
@@ -89,23 +136,48 @@ div h4
 	
 
 }
-#menu ul{
+#menu .nav-pills{
 	padding-left: -30px;
 	width: 100%;
-	padding-top: 30px;
+	padding-top: 10px;
+	display: block;
+}
+#menu_xemtour {
+	padding-bottom: 20px;
+	border-bottom: none;
 }
 #menu_xemtour a:hover{
 	border-bottom-style: none;
 }
+#menu_xemtour ul li{
+	margin-bottom: 10px;
+}
 /*--------Menu Cap2----------*/
-#menu li ul{
+#menu li > ul{
 	position: absolute;
 	display: none;
-	width: 200px;
-	margin-left: -20px;
-	margin-top: -12px;
+	width: 180px;
+	margin-top: -10px;
+	padding-left: 10px;
+	z-index: 900;
+	background:#FFF;
 }
-#menu li:hover ul{
+#menu ul .btn-group a{
+	margin-right: 10px;
+	font-size: 14px;
+	font-weight:600;
+	color: #545454;
+	
+	text-transform: uppercase;
+	box-shadow: none !important;
+	text-decoration: none;
+}
+
+#menu ul .btn-group{
+	margin-top: -3px;
+}
+
+#menu ul li:hover > ul{
 	display: block;
 	list-style: none;
 }
@@ -115,8 +187,14 @@ div h4
 }
 #menu li ul li a:hover{
 	text-decoration: none;
-	border-bottom-style: none;
+	color:#0076a1; 
+	border-bottom: 2px solid #0076a1;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    height: auto;
 }
+
+
 /*---------EndMenu--------*/
 #bong_slide
 {
@@ -161,7 +239,7 @@ a
 
 .header_content
 {
-	background-image: url("../img/Color Fill 8 copy.png");
+	background-image: url("../img/Color Fill 8 copy.png");*/
 	border-top-style: none;
     border-right-style: none;
     border-bottom-style:  solid;
@@ -169,12 +247,10 @@ a
     border-width: 0 0 1px 0;
     border-color: #0076a1;
     padding-top: 10px;
-
-
 }
 #header_banner
 {
-	padding-top: 40px;
+	padding-top: 30px;
 	height: 100%;
 }
 #header_banner div img
@@ -287,6 +363,7 @@ div div div a{
 	text-align: center;
 	padding-bottom: 10px;
 	padding-top: 10px;
+	margin-bottom: 15px;
 	
 }
 #content_tour_hot_note h5{
@@ -448,3 +525,64 @@ footer
  	width: 180px;
  	height: 36px;
  } 
+.item{
+	display: block;
+	max-width: 100%;
+	height: auto;
+	float: left;
+}
+.item div div h5{
+	padding-right: 5px;
+	font-weight: 600;
+	font-size: 17px;
+	color: #6e6e6e;
+}
+.item div div p {
+	color: #959595;
+	font-size: 12px;
+	font-weight: 600;
+}
+.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+#slide_picture .carousel-control .glyphicon-chevron-left {
+    margin-left: -80px;
+    margin-top: -30px;
+    color: green;
+}
+#slide_picture .carousel-control .glyphicon-chevron-right{
+	margin-right: -70px;
+    margin-top: -20px;
+    color:green;
+}
